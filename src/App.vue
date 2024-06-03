@@ -6,7 +6,7 @@ const { data } = useRequest(mockApi)
 </script>
 
 <template>
-  <div>{{ data?.toString() }}</div>
+  <div>{{ data?.toString() }} huskey</div>
   <router-view />
 </template>
 
