@@ -7,6 +7,9 @@ const { data } = useRequest(mockApi)
 
 <template>
   <div>{{ data?.toString() }} huskey</div>
+  <p class="text-10">
+    <span class="i-custom:camera" /><span>123</span>
+  </p>
   <router-view />
 </template>
 
