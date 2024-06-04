@@ -26,6 +26,7 @@
     "eslint": "^8.56.0",
     "husky": "^9.0.11",
     "lint-staged": "^15.2.5",
+    "sass": "^1.77.4",
     "typescript": "^5.2.2",
     "unocss": "^0.60.3",
     "unocss-preset-iconify": "^0.3.0",

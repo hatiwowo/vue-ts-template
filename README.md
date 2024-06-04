@@ -7,3 +7,5 @@ vue3项目自用模版
 + packages
 + pnpm-workspace.yaml
 ```
+
+## commit规范
