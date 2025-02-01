@@ -70,7 +70,7 @@ importers:
         specifier: ^0.9.1
         version: 0.9.1(rollup@4.33.0)(vue-router@4.5.0(vue@3.5.13(typescript@5.7.3)))(vue@3.5.13(typescript@5.7.3))
       vite:
-        specifier: ^5.4.14
+        specifier: '5'
         version: 5.4.14(@types/node@22.13.0)(sass@1.83.4)
       vite-plugin-compression:
         specifier: ^0.5.1
@@ -698,6 +698,27 @@ packages:
     peerDependenciesMeta:
       rollup:
         optional: true
+
+  '@rollup/rollup-darwin-arm64@4.33.0':
+    resolution: {integrity: sha512-0gR69dCAYCUk5e6jgbekfNBB7ZPLAR3R2VSXL3vyL/c8YlyEg2iq3ol+O3XHS5enKCN/sUsBcBAjSE6sLIXtug==}
+    cpu: [arm64]
+    os: [darwin]
+
+  '@rollup/rollup-darwin-x64@4.33.0':
+    resolution: {integrity: sha512-4rOvNnIRt2Kc4a6G6OXlmA8H88PUcrSn9Ac3L6rksCNK83rvHm1xTQz/XAcoy3EWuaKqkRUch0HC5DjF1rNRKA==}
+    cpu: [x64]
+    os: [darwin]
+
+  '@rollup/rollup-linux-x64-musl@4.33.0':
+    resolution: {integrity: sha512-1W1Rl8zUm2qIwGDUaH51aH64CfL9sag5BB3U92Dq7HrpRQb5pvv+tUeN1dMYr9KHX1t52fy5HuPEDVBrlywSvQ==}
+    cpu: [x64]
+    os: [linux]
+    libc: [musl]
+
+  '@rollup/rollup-win32-x64-msvc@4.33.0':
+    resolution: {integrity: sha512-wqYKNnO1Sbfl2/Tn/4gLJbzaye+MhCQWF/ZTe/7zTqq3G8GBAtL746Oj3Eq3VwJD0Mt5Z9uZYCdvMxTV/GJ2+A==}
+    cpu: [x64]
+    os: [win32]
 
   '@sec-ant/readable-stream@0.4.1':
     resolution: {integrity: sha512-831qok9r2t8AlxLko40y2ebgSDhenenCatLVeW/uBtnHPyhHOvG0C7TvfgecV+wHzIm5KUICgzmVpWS+IMEAeg==}
@@ -4811,6 +4832,18 @@ snapshots:
     optionalDependencies:
       rollup: 4.33.0
 
+  '@rollup/rollup-darwin-arm64@4.33.0':
+    optional: true
+
+  '@rollup/rollup-darwin-x64@4.33.0':
+    optional: true
+
+  '@rollup/rollup-linux-x64-musl@4.33.0':
+    optional: true
+
+  '@rollup/rollup-win32-x64-msvc@4.33.0':
+    optional: true
+
   '@sec-ant/readable-stream@0.4.1': {}
 
   '@sindresorhus/is@0.7.0': {}
@@ -7925,6 +7958,10 @@ snapshots:
     dependencies:
       '@types/estree': 1.0.6
     optionalDependencies:
+      '@rollup/rollup-darwin-arm64': 4.33.0
+      '@rollup/rollup-darwin-x64': 4.33.0
+      '@rollup/rollup-linux-x64-musl': 4.33.0
+      '@rollup/rollup-win32-x64-msvc': 4.33.0
       fsevents: 2.3.3
 
   run-applescript@7.0.0: {}
